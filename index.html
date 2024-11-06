@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>GTD Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,900"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        background-color: #4f4d53;
+        height: 48px;
+        padding: 0 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .navbar img {
+        height: 32px; /* Example size, adjust as needed */
+      }
+      .navbar input[type="search"] {
+        padding: 0.5rem;
+        background-color: darkgrey;
+      }
+      .hero-section {
+        background-image: url("media/img_hero.jpg");
+        background-size: cover;
+        color: #ebe8e2;
+        padding: 100px 20px; /* Adjust the padding as needed */
+      }
+      h1 {
+        font-size: 100px;
+        color: #4f4d53;
+        font-weight: 900;
+      }
+      h2 {
+        font-size: 64px;
+        color: #e8be02;
+        font-weight: 900;
+      }
+      h3 {
+        font-size: 20px;
+        color: #e8be02;
+        font-weight: 900;
+      }
+      h4 {
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 400;
+        margin: 0px;
+      }
+      p {
+        font-size: 20px;
+        color: #4f4d53;
+        font-weight: 400;
+      }
+      .body-section {
+        transform: translate(0, -130px);
+        padding: 0 20%;
+      }
+      .photo-collection {
+        display: flex;
+        flex-direction: row;
+      }
+      .team-member {
+        flex: 1;
+        text-align: center;
+        margin: 20px;
+      }
+      .team-member img {
+        width: 200px; /* Adjust as needed */
+        border-radius: 50%;
+      }
+      .yellow-band {
+        background-color: #e8be02;
+        height: 12px;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .cards-collection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .cards-collection .card {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin: 20px;
+        align-items: center;
+        text-align: left;
+      }
+      .flex-end {
+        justify-content: flex-end;
+      }
+      .cards-collection .card img {
+        width: 100px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      .cards-collection .card .section {
+        display: flex;
+        flex-direction: column;
+      }
+      .margin-zero {
+        margin: 0;
+      }
+      .footer {
+        background-color: #4f4d53;
+        height: 320px;
+        color: #ffffff;
+        padding: 40px 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+      .footer p {
+        color: #ffffff;
+      }
+      .footer .footer-content {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="media/gtd_logo.png" alt="GTD Logo" />
+      <input type="search" placeholder="Search" />
+    </div>
+    <div class="hero-section text-center">
+      <h1>Hello, we’re gtd.</h1>
+    </div>
+    <div class="body-section">
+      <div class="photo-collection">
+        <div class="team-member">
+          <img src="media/img_lisa.jpg" alt="Lisa" />
+        </div>
+        <div class="team-member">
+          <img src="media/img_danielle.jpg" alt="Danielle" />
+        </div>
+        <div class="team-member">
+          <img src="media/img_brian.jpg" alt="Brian" />
+        </div>
+      </div>
+      <h2 class="text-center">How it started</h2>
+      <p class="text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris n isi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in c ulpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+      <div class="cards-collection">
+        <div class="card flex-end">
+          <img src="media/img_lisa.jpg" alt="Lisa" />
+          <div class="section">
+            <h3 class="margin-zero">Lisa</h3>
+            <p class="margin-zero">lisa@gtd.co</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="media/img_danielle.jpg" alt="Danielle" />
+          <div class="section">
+            <h3 class="margin-zero">Danielle</h3>
+            <p class="margin-zero">danielle@gtd.co</p>
+            <p class="margin-zero">(123) 456-7890</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="yellow-band"></div>
+    <div class="footer">
+      <div class="footer-content">
+        <h3>Team</h3>
+        <h4>Lisa</h4>
+        <h4>lisa@gtd.co</h4>
+        <h4>Danielle</h4>
+        <h4>danielle@gtd.co</h4>
+        <h4>(123) 456-7890</h4>
+        <h4>Brian</h4>
+        <p>Join us!</p>
+      </div>
+      <div class="footer-content">
+        <h3>Learn More</h3>
+        <h4>Manifesto</h4>
+        <h4>Works</h4>
+        <h4>Stories</h4>
+      </div>
+      <div class="footer-content">
+        <h3>Meet Us</h3>
+        <h4>Studio</h4>
+        <h4>Community</h4>
+        <h4>Workshops</h4>
+      </div>
+      <div class="footer-content">
+        <h3>Contact</h3>
+        <h4>Twitter</h4>
+        <h4>Facebook</h4>
+        <h4>Instagram</h4>
+      </div>
+    </div>
+  </body>
+</html>
